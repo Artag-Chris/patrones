@@ -11,7 +11,7 @@
  */
 interface Handler{
     setNext(handler:Handler):Handler
-    handle(request:Request):void
+    handle(request:Request):void 
 }
 
 abstract class BaseHandler implements Handler{
