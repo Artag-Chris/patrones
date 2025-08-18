@@ -9,3 +9,26 @@
  *
  * https://refactoring.guru/es/design-patterns/chain-of-responsibility
  */
+interface Handler{
+    setNext(handler:Handler):Handler
+    handle(request:Request):void
+}
+
+abstract class BaseHandler implements Handler{
+    private nextHandler: Handler | null = null;
+
+    setNext(handler: Handler): Handler {
+        this.nextHandler = handler;
+        return handler;
+    }
+
+    handle(request: Request): void {
+        if (this.nextHandler) {
+            this.nextHandler.handle(request);
+        }
+    }
+}
+
+class BasicSupport extends BaseHandler {
+
+}
