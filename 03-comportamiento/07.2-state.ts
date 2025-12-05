@@ -33,7 +33,7 @@ interface State {
   close(): void;
 }
 
-// Clase Context - AutomaticDoor
+// Clase Context - AutomaticDoor 
 class AutomaticDoor {
   private state: State;
 
