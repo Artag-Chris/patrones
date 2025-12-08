@@ -29,7 +29,7 @@ abstract class BaseHandler implements Handler {
     if (this.nextHandler) {
       this.nextHandler.handle(request);
     }
-  }
+  } 
 }
 
 // Soporte básico
