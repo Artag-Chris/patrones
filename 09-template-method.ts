@@ -14,7 +14,7 @@
  * https://refactoring.guru/es/design-patterns/template-method
  */
 
-import { COLORS } from '../helpers/colors.ts';
+import { COLORS } from './helpers/colors.ts';
 
 /**
  * Contexto: Vamos a implementar un sistema que permite preparar
