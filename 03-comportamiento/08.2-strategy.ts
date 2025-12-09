@@ -105,4 +105,4 @@ function main(): void {
   console.log('Germany: $', taxCalculator.calculate(100).toFixed(2));
 }
 
-main();
+main();                                                                                                 
