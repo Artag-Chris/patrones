@@ -11,7 +11,7 @@
  * https://refactoring.guru/es/design-patterns/visitor
  */
 
-import { COLORS } from "./helpers/colors.ts";
+import { COLORS } from "../helpers/colors.ts";
 
 /**
  * !Objetivo:
